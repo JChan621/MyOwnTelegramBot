@@ -41,9 +41,7 @@ hr = 0
 #maxid = 337690936
 #fourierid = 199823643
 #aecomchat : -391498384
-max = 337690936
 me = 199823643
-aecom = -391498384
 bad = 954104230
 fargp = -1001156503383
 maple = 486439692
@@ -60,8 +58,8 @@ shit = 'AgACAgQAAxkDAAIEol6ejwPXp36hwrP-C8eZYZwhlfzFAALRqjEbKMf8UIGV8l6UDj08AAFL
 far = "CAACAgUAAxkBAAIEv16gAAFkrma7WnBFP36gVMTALLxgpAACLQADDuO_IsogrwzLG7_dGAQ"
 farunique = 'AgADLQADDuO_Ig'
 farsad = "AgADpgADq1fECw"
-telepot.api._onetime_pool_spec = (urllib3.ProxyManager, dict(proxy_url = proxy_url, num_pools = 1, maxsize = 1, retries = False, timeout=30))
-bot = telepot.Bot('1147505946:AAH48sNZfzrf1QBoymNks9tCQs4RHQHj1y4')
+telepot.api._onetime_pool_spec = (urllib3.ProxyManager, dict(proxy_url = proxy_url, num_pools = 1, maxsize = 1, retries = False, timeout = 30))
+bot = telepot.Bot('YourBotToken')
 gavin = bot.getStickerSet('GavinReactionsUltimate')['stickers']
 blackhonka = bot.getStickerSet('BlackHonka')['stickers']
 honka_memes = bot.getStickerSet('honka_memes')['stickers']
@@ -326,7 +324,7 @@ def groupStat(chat_id, msg_id):
     bot.sendMessage(chat_id, "喺呢個群收過最多酒嘅" + str(len(result1)) + "個人：" + result1_done + "\n喺呢個群收過最多膠嘅" + str(len(result2)) + "個人：" + result2_done, None, None, None, msg_id)
 def badRequests(chat_id, msg_id):
     bot.sendMessage(chat_id, '請輸入一個最小為1最大為100的整數', None, None, None, msg_id)
-bot.message_loop({'chat':handle, 'callback_query':handle2}, timeout=100)
+bot.message_loop({'chat': handle, 'callback_query': handle2}, timeout = 100)
 schedule.every().day.at("16:00").do(ResetPlastic)
 #print(1)
 while True:
