@@ -38,9 +38,6 @@ telepot.api._pools = {
     timeout = 30),
 }
 hr = 0
-#maxid = 337690936
-#fourierid = 199823643
-#aecomchat : -391498384
 me = 199823643
 bad = 954104230
 fargp = -1001156503383
@@ -83,7 +80,7 @@ def handle(msg):
                 #            bot.sendMessage(chat_id,"有bug，run唔到",None,None,None,msg['message_id'])
                 #    else:
                 #        bot.sendMessage(chat_id,"關唔關你事牙",None,None,None,msg['message_id'])
-                #elif msg['from']['id']==me:
+                #elif msg['from']['id'] == me:
                    # if ({',','，','.','．','-','—','=','。'} & set(msg['text'])):
                         #print (1)
                         #bot.deleteMessage((chat_id,msg['message_id']))
@@ -334,6 +331,3 @@ while True:
     time.sleep(10)
 
 #print(time.time())
-#maxid = 337690936
-#fourierid = 199823643
-#aecomchat: -391498384
